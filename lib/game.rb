@@ -85,9 +85,8 @@ class Game
       puts "2 player game"
     end
 
-    game = self.new(@player_1,@player_2)
-
     while (game_count > 0 )
+      game = self.new(@player_1,@player_2)
       game.play
       game_count -= 1
     end
