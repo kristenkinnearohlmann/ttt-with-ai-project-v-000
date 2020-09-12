@@ -67,7 +67,16 @@ class Game
   def self.start
     puts "Please enter the number of players (0, 1, 2):"
     player_count = gets.chomp
-    puts "You have selected #{player_count} players."
+
+    if player_count == "wargames"
+      puts "Thermonuclear War, Joshua"
+    elsif player_count == 0
+      puts "Computer game"
+    elsif player_count == 1
+      puts "1 player game"
+    else player_count == 2
+      puts "2 player game"
+    end
   end
 
 end
