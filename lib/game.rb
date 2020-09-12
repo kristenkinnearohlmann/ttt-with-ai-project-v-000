@@ -77,12 +77,24 @@ class Game
       game_count = 100
       @player_1 = Players::Computer.new("X")
       @player_2 = Players::Computer.new("O")
+      
     elsif player_count == "0"
       puts "You have asked for 2 Computer players."
       @player_1 = Players::Computer.new("X")
       @player_2 = Players::Computer.new("O")
+      
     elsif player_count == "1"
-      puts "You have asked for 1 Human player and 1 Computer player."
+      puts "You have asked for 1 Human player and 1 Computer player. Do you want X (Player 1) or 0 (Player 2)?"
+      human_token = gets.chomp
+
+      if human_token == "X"
+        @player_1 = Players::Human.new("X")
+        @player_2 = Players::Computer.new("O")
+      elsif human_token == "O"
+        @player_1 = Players::Computer.new("X")
+        @player_2 = Players::Human.new("O")
+      end
+        
     elsif player_count == "2"
       puts "2 player game"
     end
