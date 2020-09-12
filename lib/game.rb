@@ -70,7 +70,11 @@ class Game
   end
 
   def play
-    puts "Select an open square:"
+
+    position_req = "Select an open square"
+    position_req += ", #{current_player.name}" if current_player.name != nil
+    position_req += ":"
+    puts position_req
 
     while !over?
       board_display if current_player.class == Players:: Human
