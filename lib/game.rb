@@ -5,6 +5,7 @@ class Game
   WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]]
 
   def initialize(player_1=nil, player_2=nil, board=nil)
+    binding.pry
     player_1 == nil ? @player_1 = Players::Human.new("X") : @player_1 = player_1
     player_2 == nil ? @player_2 = Players::Human.new("O") : @player_2 = player_2
     board == nil ?  @board = Board.new : @board = board
