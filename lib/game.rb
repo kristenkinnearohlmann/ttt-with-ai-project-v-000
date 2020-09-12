@@ -88,9 +88,6 @@ class Game
     game_count = 1
     won_count = 0
 
-    player_1_name = ""
-    player_2_name = ""
-
     if player_count == "wargames"
       puts "Thermonuclear War"
       game_count = 100
@@ -116,8 +113,16 @@ class Game
 
     elsif player_count == "2"
       puts "You have asked for a 2 Human player game. Who will be X (Player 1)?"
-      player_1_name = gets.chomp
+      name1 = gets.chomp
+      puts "Who will be O (Player 2)?"
+      name2 = gets.chomp
 
+      @player_1 = Players::Human.new("X")
+      @player_1.name = name1
+
+      @player_2 = Players::Human.new("O")
+      @player_2.name = name2
+        
     end
 
     while (game_count > 0 )
