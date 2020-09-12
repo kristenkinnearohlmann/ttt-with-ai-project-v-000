@@ -73,6 +73,8 @@ class Game
     if player_count == "wargames"
       puts "Thermonuclear War"
       game_count = 100
+      @player_1 = Players::Computer.new("X")
+      @player_2 = Players::Computer.new("O")
     elsif player_count == "0"
       puts "You have asked for 2 Computer players."
       @player_1 = Players::Computer.new("X")
