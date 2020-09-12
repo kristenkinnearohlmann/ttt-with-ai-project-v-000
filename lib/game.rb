@@ -116,7 +116,8 @@ class Game
 
     elsif player_count == "2"
       puts "You have asked for a 2 Human player game. Who will be X (Player 1)?"
-      player1_name
+      player_1_name = gets.chomp
+
     end
 
     while (game_count > 0 )
