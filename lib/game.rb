@@ -69,7 +69,7 @@ class Game
     player_count = gets.chomp
 
     if player_count == "wargames"
-      puts "Thermonuclear War, Joshua"
+      puts "Thermonuclear War"
     elsif player_count == "0"
       puts "Computer game"
     elsif player_count == "1"
