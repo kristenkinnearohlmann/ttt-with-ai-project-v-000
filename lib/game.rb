@@ -69,6 +69,7 @@ class Game
     player_count = gets.chomp
 
     game_count = 1
+    won_count = 0
 
     if player_count == "wargames"
       puts "Thermonuclear War"
@@ -88,6 +89,8 @@ class Game
     while (game_count > 0 )
       game = self.new(@player_1,@player_2)
       game.play
+
+      won_count += 1 ? player_count == "wargames" && winner != nil
       game_count -= 1
     end
 
