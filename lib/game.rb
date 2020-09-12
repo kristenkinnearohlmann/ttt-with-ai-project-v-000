@@ -88,8 +88,8 @@ class Game
     game_count = 1
     won_count = 0
 
-    player1_name = ""
-    player2_name = ""
+    player_1_name = ""
+    player_2_name = ""
 
     if player_count == "wargames"
       puts "Thermonuclear War"
@@ -116,7 +116,7 @@ class Game
 
     elsif player_count == "2"
       puts "You have asked for a 2 Human player game. Who will be X (Player 1)?"
-
+      player1_name
     end
 
     while (game_count > 0 )
