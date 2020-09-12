@@ -74,7 +74,7 @@ class Game
       puts "Computer game"
     elsif player_count == 1
       puts "1 player game"
-    else player_count == 2
+    elsif player_count == 2
       puts "2 player game"
     end
   end
