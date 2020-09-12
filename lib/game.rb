@@ -65,9 +65,6 @@ class Game
   end
 
   def self.start
-    puts "You are in start!"
-    x = @player_1
-    puts x
     puts "Please enter the number of players (0, 1, 2):"
     player_count = gets.chomp
     puts "You have selected #{player_count} players."
