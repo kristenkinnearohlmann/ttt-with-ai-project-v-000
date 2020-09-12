@@ -66,7 +66,8 @@ class Game
 
   def self.start
     puts "You are in start!"
-    puts "#{@player_1}"
+    x = @player_1
+    puts x
   end
 
 end
