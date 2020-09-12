@@ -70,7 +70,7 @@ class Game
     puts x
     puts "Please enter the number of players (0, 1, 2):"
     player_count = gets.chomp
-    puts "You have selected: #{player_count}"
+    puts "You have selected #{player_count} players."
   end
 
 end
