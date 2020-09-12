@@ -54,7 +54,10 @@ class Game
   end
 
   def play
-    board
+    if @player_1 == Players::Human || @player_2 == Players::Human
+      puts "At least 1 human player"
+    end
+    
     while !over?
       turn
     end
