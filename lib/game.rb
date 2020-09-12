@@ -13,7 +13,7 @@ class Game
   def board
     binding.pry
     if @player_1.class == Players::Human || @player_2 == Players::Human
-      @board
+      @board.cells
     end
   end
 
