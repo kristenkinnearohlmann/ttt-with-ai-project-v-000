@@ -57,6 +57,7 @@ class Game
   end
 
   def play
+    board
     while !over?
       turn
     end
