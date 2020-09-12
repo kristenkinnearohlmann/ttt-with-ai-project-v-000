@@ -55,7 +55,7 @@ class Game
 
   def play
     if @player_1.class == Players::Human || @player_2.class == Players::Human
-      puts "| . | . | . |\n| . | . | . |\n| . | . | . |"
+      puts "Current board"
     end
 
     while !over?
