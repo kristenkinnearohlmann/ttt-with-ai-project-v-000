@@ -10,11 +10,6 @@ class Game
     board == nil ?  @board = Board.new : @board = board
   end
 
-  def start
-    puts "You are in start!"
-    puts @player_1
-  end
-
   def board
     @board
   end
@@ -68,5 +63,11 @@ class Game
       puts "Cat's Game!"
     end
   end
+
+
+    def self.start
+      puts "You are in start!"
+      puts @player_1
+    end
 
 end
