@@ -3,11 +3,21 @@ module Players
   class Computer < Player
 
     def move(board)
+
+      input = ""
+
       if board.cells[4] == " " && board.cells.count {|cell| cell == " "} == 9 #middle square is empty and game is new
-        "5"
+        input = "5"
       else
-        rand(1..9)
+        input = rand(1..9)
       end
+
+      if !board.valid_move?(input)
+        input = "invalid"
+      end
+
+      input
+
     end
 
   end
