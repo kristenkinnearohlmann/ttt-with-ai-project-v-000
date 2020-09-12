@@ -55,7 +55,8 @@ class Game
 
   def play
     if @player_1.class == Players::Human || @player_2.class == Players::Human
-      puts "At least 1 human player"
+      puts "------------"
+      puts "| . | . | . |"
     end
 
     while !over?
