@@ -11,10 +11,7 @@ class Game
   end
 
   def board
-    binding.pry
-    if @player_1.class == Players::Human || @player_2 == Players::Human
-      @board
-    end
+    @board
   end
 
   def current_player
