@@ -71,8 +71,8 @@ class Game
   end
 
   def play
-
     while !over?
+      board_display
       turn
     end
     if winner != nil
