@@ -94,6 +94,8 @@ class Game
       game_count -= 1
     end
 
+    puts "wargames outcome: #{won_count} games won."
+
   end
 
 end
