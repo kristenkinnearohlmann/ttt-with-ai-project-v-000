@@ -54,7 +54,7 @@ class Game
   end
 
   def play
-    if @player_1 == Players::Human || @player_2 == Players::Human
+    if @player_1.class == Players::Human || @player_2.class == Players::Human
       puts "At least 1 human player"
     end
 
