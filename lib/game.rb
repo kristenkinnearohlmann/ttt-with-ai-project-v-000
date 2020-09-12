@@ -94,7 +94,7 @@ class Game
       game_count -= 1
     end
 
-    puts "wargames outcome: #{won_count} games won."
+    puts "wargames outcome: #{won_count} games won." if player_count == "wargames"
 
   end
 
