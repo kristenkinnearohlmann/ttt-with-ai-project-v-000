@@ -117,13 +117,10 @@ class Game
       puts "Who will be O (Player 2)?"
       name2 = gets.chomp
 
-      @player_1 = Players::Human.new("X")
-      binding.pry
-      @player_1.name = name1
+      @player_1 = Players::Human.new("X",name1)
 
-      @player_2 = Players::Human.new("O")
+      @player_2 = Players::Human.new("O",name2)
       binding.pry
-      @player_2.name = name2
 
     end
 
