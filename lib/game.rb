@@ -122,7 +122,7 @@ class Game
 
       @player_2 = Players::Human.new("O")
       @player_2.name = name2
-        
+
     end
 
     while (game_count > 0 )
