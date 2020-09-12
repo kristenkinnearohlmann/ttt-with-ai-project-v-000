@@ -53,7 +53,7 @@ class Game
     end
   end
 
-  def play
+  def board_display
     if @player_1.class == Players::Human || @player_2.class == Players::Human
       puts "Current board"
 
@@ -68,6 +68,9 @@ class Game
 
       puts board_string
     end
+  end
+
+  def play
 
     while !over?
       turn
