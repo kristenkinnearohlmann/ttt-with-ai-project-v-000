@@ -72,11 +72,16 @@ class Game
       puts "Thermonuclear War"
     elsif player_count == "0"
       puts "Computer game"
+      @player_1 = Players::Computer.new("X")
+      @player_2 = Players::Computer.new("O")
     elsif player_count == "1"
       puts "1 player game"
     elsif player_count == "2"
       puts "2 player game"
     end
+
+    game = self.new(@player_1,@player_2)
+    
   end
 
 end
