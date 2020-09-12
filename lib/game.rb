@@ -81,7 +81,7 @@ class Game
     request_position
 
     while !over?
-      board_display if current_player.class == Players:: Human
+      board_display if current_player.class == Players::Human
       turn
     end
     if winner != nil
