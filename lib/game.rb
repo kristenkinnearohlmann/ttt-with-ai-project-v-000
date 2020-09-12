@@ -12,7 +12,9 @@ class Game
   end
 
   def board
-    @board
+    if @player_1.class == Players::Human || @player_2 == Players::Human
+      @board
+    end
   end
 
   def current_player
