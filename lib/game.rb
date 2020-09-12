@@ -70,11 +70,11 @@ class Game
 
     if player_count == "wargames"
       puts "Thermonuclear War, Joshua"
-    elsif player_count == 0
+    elsif player_count == "0"
       puts "Computer game"
-    elsif player_count == 1
+    elsif player_count == "1"
       puts "1 player game"
-    elsif player_count == 2
+    elsif player_count == "2"
       puts "2 player game"
     end
   end
