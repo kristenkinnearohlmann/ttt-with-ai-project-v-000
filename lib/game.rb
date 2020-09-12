@@ -70,6 +70,8 @@ class Game
   end
 
   def play
+    puts "Select an open square:"
+
     while !over?
       board_display if current_player.class == Players:: Human
       turn
