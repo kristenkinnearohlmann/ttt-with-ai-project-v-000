@@ -72,7 +72,7 @@ class Game
 
   def play
     while !over?
-      board_display
+      board_display if current_player.class == Players:: Human
       turn
     end
     if winner != nil
