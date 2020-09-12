@@ -78,9 +78,8 @@ class Game
 
   def play
 
-    request_position
-
     while !over?
+      request_position
       board_display if current_player.class == Players::Human
       turn
     end
