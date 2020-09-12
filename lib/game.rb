@@ -90,7 +90,7 @@ class Game
       game = self.new(@player_1,@player_2)
       game.play
 
-      won_count += 1 ? player_count == "wargames" && winner != nil
+      won_count += 1 if player_count == "wargames" && winner != nil
       game_count -= 1
     end
 
