@@ -118,7 +118,6 @@ class Game
       name2 = gets.chomp
 
       @player_1 = Players::Human.new("X",name1)
-
       @player_2 = Players::Human.new("O",name2)
       binding.pry
 
