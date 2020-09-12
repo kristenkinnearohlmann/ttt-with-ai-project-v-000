@@ -116,7 +116,7 @@ class Game
 
     elsif player_count == "2"
       puts "You have asked for a 2 Human player game. Who will be X (Player 1)?"
-      
+
     end
 
     while (game_count > 0 )
