@@ -54,20 +54,19 @@ class Game
   end
 
   def board_display
-    if @player_1.class == Players::Human || @player_2.class == Players::Human
-      puts "Current board"
+    puts "Current board"
 
-      index = 0
-      board_string = ""
+    index = 0
+    board_string = ""
 
-      while index < 10
-        board_string += "| #{@board.cells[index]} "
-        board_string += "|\n" if index == 2 || index == 5
-        index += 1
-      end
-
-      puts board_string
+    while index < 10
+      board_string += "| #{@board.cells[index]} "
+      board_string += "|\n" if index == 2 || index == 5
+      index += 1
     end
+
+    puts board_string
+
   end
 
   def play
