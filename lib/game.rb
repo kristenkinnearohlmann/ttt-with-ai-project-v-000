@@ -64,10 +64,9 @@ class Game
     end
   end
 
-
-    def self.start
-      puts "You are in start!"
-      puts @player_1
-    end
+  def self.start
+    puts "You are in start!"
+    puts @player_1
+  end
 
 end
