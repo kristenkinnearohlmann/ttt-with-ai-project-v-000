@@ -57,6 +57,7 @@ class Game
   end
 
   def play
+    binding.pry
     board
     while !over?
       turn
