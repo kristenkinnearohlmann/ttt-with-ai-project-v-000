@@ -9,6 +9,7 @@ module Players
         input = "invalid"
       end
 
+      input
     end
 
   end
