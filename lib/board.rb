@@ -50,7 +50,7 @@ class Board
 
   def update(position,player)
     @position = position.to_i - 1
-    @cells[@position] = player.token if valid_move?
+    @cells[@position] = player.token
   end
 
   def reset!
