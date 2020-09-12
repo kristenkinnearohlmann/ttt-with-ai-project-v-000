@@ -8,10 +8,10 @@ class Game
     player_1 == nil ? @player_1 = Players::Human.new("X") : @player_1 = player_1
     player_2 == nil ? @player_2 = Players::Human.new("O") : @player_2 = player_2
     board == nil ?  @board = Board.new : @board = board
-    binding.pry
   end
 
   def board
+    binding.pry
     if @player_1.class == Players::Human || @player_2 == Players::Human
       @board
     end
