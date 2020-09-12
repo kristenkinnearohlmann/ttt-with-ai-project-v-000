@@ -81,6 +81,7 @@ class Game
     end
 
     game = self.new(@player_1,@player_2)
+    binding.pry
 
   end
 
