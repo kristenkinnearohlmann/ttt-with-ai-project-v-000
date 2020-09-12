@@ -81,7 +81,7 @@ class Game
       @player_1 = Players::Computer.new("X")
       @player_2 = Players::Computer.new("O")
     elsif player_count == "1"
-      puts "1 player game"
+      puts "You have asked for 1 Humand player and 1 Computer player."
     elsif player_count == "2"
       puts "2 player game"
     end
@@ -90,11 +90,11 @@ class Game
       game = self.new(@player_1,@player_2)
       game.play
 
-      won_count += 1 if player_count == "wargames" && game.winner != nil
+      won_count += 1 if game.winner != nil
       game_count -= 1
     end
 
-    puts "wargames outcome: #{won_count} games won." if player_count == "wargames"
+    puts "Outcome: #{won_count} games won."
 
   end
 
