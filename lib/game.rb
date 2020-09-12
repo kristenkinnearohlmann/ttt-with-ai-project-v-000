@@ -68,8 +68,11 @@ class Game
     puts "Please enter the number of players (0, 1, 2):"
     player_count = gets.chomp
 
+    game_count = 1
+
     if player_count == "wargames"
       puts "Thermonuclear War"
+      game_count = 100
     elsif player_count == "0"
       puts "You have asked for 2 Computer players."
       @player_1 = Players::Computer.new("X")
@@ -81,7 +84,11 @@ class Game
     end
 
     game = self.new(@player_1,@player_2)
-    game.play
+
+    while (game_count > 0 )
+      game.play
+      game_count -= 1
+    end
 
   end
 
