@@ -54,7 +54,6 @@ class Game
   end
 
   def play
-    puts @board
     while !over?
       turn
     end
